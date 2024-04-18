@@ -1,0 +1,669 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		531DEF0889DA815B3BD6E8B21360FAAA /* neurosdk2 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B766F88618D63FC31B987F8B69F05784 /* Build configuration list for PBXAggregateTarget "neurosdk2" */;
+			buildPhases = (
+				6827FBF00F6700E198C6F6F77C3AE597 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = neurosdk2;
+		};
+		FAE2157E5261CE25B38087719EF0AB30 /* em-st-artifacts */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BEBA1AED3601777E0C9628B291A5A6CF /* Build configuration list for PBXAggregateTarget "em-st-artifacts" */;
+			buildPhases = (
+				36DEA5FDBB9891A79718B583560FD276 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = "em-st-artifacts";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4E46C5384D23471D83DF7B02CC0AB725 /* Pods-BRAINBITmusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC273C9F2DC41D862300A743B2824081 /* Pods-BRAINBITmusic-dummy.m */; };
+		BA055ADC92BC0EE9D3429B2F3C9EB5E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CEF664A4808C65DF0F5C8B5AEA564439 /* Pods-BRAINBITmusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5D5ECAAE993261D1BBECEC9AA740156 /* Pods-BRAINBITmusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A6F445A2635A449E253691AA7FBD0B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 531DEF0889DA815B3BD6E8B21360FAAA;
+			remoteInfo = neurosdk2;
+		};
+		5C2F38FB3F79E34D7C68C775F3523EFF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAE2157E5261CE25B38087719EF0AB30;
+			remoteInfo = "em-st-artifacts";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		010DF33ED6F437D47DD9007F10685FEF /* Pods-BRAINBITmusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BRAINBITmusic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		06B189680E705C24DD135BCEAA84BB8F /* neurosdk2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = neurosdk2.release.xcconfig; sourceTree = "<group>"; };
+		154C26AE7350807FA7E30AEE7409C1E1 /* Pods-BRAINBITmusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BRAINBITmusic-acknowledgements.plist"; sourceTree = "<group>"; };
+		39DB55AC99AA9246372C702FFD6992D4 /* Pods-BRAINBITmusic */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BRAINBITmusic"; path = Pods_BRAINBITmusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BD4124E7C7196DBAF58BDF3D8A9D4BD /* Pods-BRAINBITmusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRAINBITmusic.release.xcconfig"; sourceTree = "<group>"; };
+		6C3BC67A34E1571E0E4D61F43FA13D9E /* Pods-BRAINBITmusic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BRAINBITmusic-frameworks.sh"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8CA0D20771259D3816E0F304CBFA9069 /* em-st-artifacts.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "em-st-artifacts.release.xcconfig"; sourceTree = "<group>"; };
+		9B8226C608EE6175688DCB54C7E129C8 /* Pods-BRAINBITmusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BRAINBITmusic.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AC51A5E57496F295993F93F155E813CD /* em-st-artifacts-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "em-st-artifacts-xcframeworks.sh"; sourceTree = "<group>"; };
+		BF531413F3CC26F4665180A45B228285 /* em-st-artifacts.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "em-st-artifacts.debug.xcconfig"; sourceTree = "<group>"; };
+		C2911F841FBD0D203A9EF10A5D1AE32B /* neurosdk2-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "neurosdk2-xcframeworks.sh"; sourceTree = "<group>"; };
+		C3C2535E0889732ABC063BB69C597D3D /* Pods-BRAINBITmusic-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BRAINBITmusic-Info.plist"; sourceTree = "<group>"; };
+		DB5BE0E7F9D9651C8BB92CF3D6F8ACF5 /* Pods-BRAINBITmusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BRAINBITmusic.modulemap"; sourceTree = "<group>"; };
+		E3B2109DECD61771273EB5BEB5A9410A /* neurosdk2.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = neurosdk2.xcframework; sourceTree = "<group>"; };
+		E5D5ECAAE993261D1BBECEC9AA740156 /* Pods-BRAINBITmusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BRAINBITmusic-umbrella.h"; sourceTree = "<group>"; };
+		EC273C9F2DC41D862300A743B2824081 /* Pods-BRAINBITmusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BRAINBITmusic-dummy.m"; sourceTree = "<group>"; };
+		F43E46FAECD67FC7330AEB4F217049FA /* EmStArtifacts.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = EmStArtifacts.xcframework; sourceTree = "<group>"; };
+		F4997C45DEA22C3C17E2EF936DF4F072 /* neurosdk2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = neurosdk2.debug.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA055EEFA78704549611373EAD6B4C06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA055ADC92BC0EE9D3429B2F3C9EB5E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041EA083372688A9A726E6225CE14369 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				39DB55AC99AA9246372C702FFD6992D4 /* Pods-BRAINBITmusic */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2152CBD88A9FF6547893C9945F666FE1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2911F841FBD0D203A9EF10A5D1AE32B /* neurosdk2-xcframeworks.sh */,
+				F4997C45DEA22C3C17E2EF936DF4F072 /* neurosdk2.debug.xcconfig */,
+				06B189680E705C24DD135BCEAA84BB8F /* neurosdk2.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/neurosdk2";
+			sourceTree = "<group>";
+		};
+		2DE1BE2860173B6137DFEAA4D4853A55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1DBD31B74B965BB7BCC18FBC2370EFA /* em-st-artifacts */,
+				F810E98DCCC03B3A5A73B857FE8BCFD6 /* neurosdk2 */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3CDAB0625442B995D6C3F381EF77B32B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E3B2109DECD61771273EB5BEB5A9410A /* neurosdk2.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5828C7BA27EC0CB53EA0FA0F9376D8EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F43E46FAECD67FC7330AEB4F217049FA /* EmStArtifacts.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5EE334FB729668B4E71ABA1EB86F021A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				690CF9CFA105321F373AA50B65592072 /* Pods-BRAINBITmusic */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		690CF9CFA105321F373AA50B65592072 /* Pods-BRAINBITmusic */ = {
+			isa = PBXGroup;
+			children = (
+				DB5BE0E7F9D9651C8BB92CF3D6F8ACF5 /* Pods-BRAINBITmusic.modulemap */,
+				010DF33ED6F437D47DD9007F10685FEF /* Pods-BRAINBITmusic-acknowledgements.markdown */,
+				154C26AE7350807FA7E30AEE7409C1E1 /* Pods-BRAINBITmusic-acknowledgements.plist */,
+				EC273C9F2DC41D862300A743B2824081 /* Pods-BRAINBITmusic-dummy.m */,
+				6C3BC67A34E1571E0E4D61F43FA13D9E /* Pods-BRAINBITmusic-frameworks.sh */,
+				C3C2535E0889732ABC063BB69C597D3D /* Pods-BRAINBITmusic-Info.plist */,
+				E5D5ECAAE993261D1BBECEC9AA740156 /* Pods-BRAINBITmusic-umbrella.h */,
+				9B8226C608EE6175688DCB54C7E129C8 /* Pods-BRAINBITmusic.debug.xcconfig */,
+				6BD4124E7C7196DBAF58BDF3D8A9D4BD /* Pods-BRAINBITmusic.release.xcconfig */,
+			);
+			name = "Pods-BRAINBITmusic";
+			path = "Target Support Files/Pods-BRAINBITmusic";
+			sourceTree = "<group>";
+		};
+		A237CD094E7CC189B5BB575E8EA66039 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC51A5E57496F295993F93F155E813CD /* em-st-artifacts-xcframeworks.sh */,
+				BF531413F3CC26F4665180A45B228285 /* em-st-artifacts.debug.xcconfig */,
+				8CA0D20771259D3816E0F304CBFA9069 /* em-st-artifacts.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/em-st-artifacts";
+			sourceTree = "<group>";
+		};
+		B1DBD31B74B965BB7BCC18FBC2370EFA /* em-st-artifacts */ = {
+			isa = PBXGroup;
+			children = (
+				5828C7BA27EC0CB53EA0FA0F9376D8EB /* Frameworks */,
+				A237CD094E7CC189B5BB575E8EA66039 /* Support Files */,
+			);
+			name = "em-st-artifacts";
+			path = "em-st-artifacts";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2DE1BE2860173B6137DFEAA4D4853A55 /* Pods */,
+				041EA083372688A9A726E6225CE14369 /* Products */,
+				5EE334FB729668B4E71ABA1EB86F021A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F810E98DCCC03B3A5A73B857FE8BCFD6 /* neurosdk2 */ = {
+			isa = PBXGroup;
+			children = (
+				3CDAB0625442B995D6C3F381EF77B32B /* Frameworks */,
+				2152CBD88A9FF6547893C9945F666FE1 /* Support Files */,
+			);
+			name = neurosdk2;
+			path = neurosdk2;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		AF60A851100F56968D46FBC37E3D6571 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEF664A4808C65DF0F5C8B5AEA564439 /* Pods-BRAINBITmusic-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DD05239EF3CD28AD56E1D369D52426FA /* Pods-BRAINBITmusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91404A58BF7ABA0039E251A199AEAEF6 /* Build configuration list for PBXNativeTarget "Pods-BRAINBITmusic" */;
+			buildPhases = (
+				AF60A851100F56968D46FBC37E3D6571 /* Headers */,
+				0DA563DEA676805443FB0C6ABD211082 /* Sources */,
+				FA055EEFA78704549611373EAD6B4C06 /* Frameworks */,
+				B170954C31629530A9ECCC25FF9CA2B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42696AC1ADB98ABF422586A60B7FD8CA /* PBXTargetDependency */,
+				8C909C19E660AC7BCAD566C9F17CE7D6 /* PBXTargetDependency */,
+			);
+			name = "Pods-BRAINBITmusic";
+			productName = Pods_BRAINBITmusic;
+			productReference = 39DB55AC99AA9246372C702FFD6992D4 /* Pods-BRAINBITmusic */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 041EA083372688A9A726E6225CE14369 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAE2157E5261CE25B38087719EF0AB30 /* em-st-artifacts */,
+				531DEF0889DA815B3BD6E8B21360FAAA /* neurosdk2 */,
+				DD05239EF3CD28AD56E1D369D52426FA /* Pods-BRAINBITmusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B170954C31629530A9ECCC25FF9CA2B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36DEA5FDBB9891A79718B583560FD276 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/em-st-artifacts/em-st-artifacts-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/em-st-artifacts/em-st-artifacts-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/em-st-artifacts/em-st-artifacts-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6827FBF00F6700E198C6F6F77C3AE597 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/neurosdk2/neurosdk2-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/neurosdk2/neurosdk2-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/neurosdk2/neurosdk2-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DA563DEA676805443FB0C6ABD211082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E46C5384D23471D83DF7B02CC0AB725 /* Pods-BRAINBITmusic-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42696AC1ADB98ABF422586A60B7FD8CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "em-st-artifacts";
+			target = FAE2157E5261CE25B38087719EF0AB30 /* em-st-artifacts */;
+			targetProxy = 5C2F38FB3F79E34D7C68C775F3523EFF /* PBXContainerItemProxy */;
+		};
+		8C909C19E660AC7BCAD566C9F17CE7D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = neurosdk2;
+			target = 531DEF0889DA815B3BD6E8B21360FAAA /* neurosdk2 */;
+			targetProxy = 3A6F445A2635A449E253691AA7FBD0B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		35823FAADC10B1C863BA846781A6D2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4997C45DEA22C3C17E2EF936DF4F072 /* neurosdk2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3E9124ABD647DB4CB7945F0F71E5E889 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B189680E705C24DD135BCEAA84BB8F /* neurosdk2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E5060A504EA995BE8CAA23C529C459B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CA0D20771259D3816E0F304CBFA9069 /* em-st-artifacts.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86C9E7E5C2CC8394456E87D8BD379E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF531413F3CC26F4665180A45B228285 /* em-st-artifacts.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9553C89E183877A5CB2F3C6801BEC129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CCAB7BF285CACFDE9DD171340BCD4B6C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B8226C608EE6175688DCB54C7E129C8 /* Pods-BRAINBITmusic.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB0E52C9624B0A392183183DBC6C6C9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BD4124E7C7196DBAF58BDF3D8A9D4BD /* Pods-BRAINBITmusic.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90D4D09BCB6A4660E43ACBE9ECB6FE9A /* Debug */,
+				9553C89E183877A5CB2F3C6801BEC129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91404A58BF7ABA0039E251A199AEAEF6 /* Build configuration list for PBXNativeTarget "Pods-BRAINBITmusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCAB7BF285CACFDE9DD171340BCD4B6C /* Debug */,
+				DB0E52C9624B0A392183183DBC6C6C9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B766F88618D63FC31B987F8B69F05784 /* Build configuration list for PBXAggregateTarget "neurosdk2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35823FAADC10B1C863BA846781A6D2C3 /* Debug */,
+				3E9124ABD647DB4CB7945F0F71E5E889 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEBA1AED3601777E0C9628B291A5A6CF /* Build configuration list for PBXAggregateTarget "em-st-artifacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86C9E7E5C2CC8394456E87D8BD379E2D /* Debug */,
+				5E5060A504EA995BE8CAA23C529C459B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

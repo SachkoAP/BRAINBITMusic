@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E3D16A72B3D8DEF006C7ACF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D16A62B3D8DEF006C7ACF /* AppDelegate.swift */; };
+		2E3D16AB2B3D8DEF006C7ACF /* InstructionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D16AA2B3D8DEF006C7ACF /* InstructionVC.swift */; };
+		2E3D16AE2B3D8DEF006C7ACF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D16AC2B3D8DEF006C7ACF /* Main.storyboard */; };
+		2E3D16B02B3D8DF3006C7ACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D16AF2B3D8DF3006C7ACF /* Assets.xcassets */; };
+		2E3D16B32B3D8DF3006C7ACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D16B12B3D8DF3006C7ACF /* LaunchScreen.storyboard */; };
+		2E3D16BE2B3D909C006C7ACF /* Instructions.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D16BD2B3D909C006C7ACF /* Instructions.xcassets */; };
+		2E3D16C02B3D935F006C7ACF /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D16BF2B3D935F006C7ACF /* Const.swift */; };
+		2E3D16C32B3DAB4A006C7ACF /* GlavnaiaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D16C22B3DAB4A006C7ACF /* GlavnaiaVC.swift */; };
+		2E3D16C52B3DAB60006C7ACF /* GlavnaiaAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E3D16C42B3DAB60006C7ACF /* GlavnaiaAssets.xcassets */; };
+		2E3D16C82B3DAF87006C7ACF /* ServiceCollcectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E3D16C72B3DAF87006C7ACF /* ServiceCollcectionViewCell.swift */; };
+		2EA1C6B32B8F50350026E16D /* ServiseCVCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1C6B22B8F50350026E16D /* ServiseCVCAssets.xcassets */; };
+		2EA1C6B52B8F53E60026E16D /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1C6B42B8F53E60026E16D /* ImageService.swift */; };
+		2EA1C6B82B9087300026E16D /* CollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1C6B72B9087300026E16D /* CollectionCollectionViewCell.swift */; };
+		2EA1C6BA2B9087700026E16D /* CollectionCVCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1C6B92B9087700026E16D /* CollectionCVCAssets.xcassets */; };
+		2EA1C6BC2B908D950026E16D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1C6BB2B908D950026E16D /* Player.swift */; };
+		2EA1C6BE2B90A4C20026E16D /* CollectionOpenOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1C6BD2B90A4C20026E16D /* CollectionOpenOne.swift */; };
+		2EA1C6C12B90B0220026E16D /* PlayerAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1C6C02B90B0220026E16D /* PlayerAssets.xcassets */; };
+		2EA1C6C32B90CA700026E16D /* Vhod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1C6C22B90CA700026E16D /* Vhod.swift */; };
+		2EE280572BB3FC92000E33C0 /* SearchDeviceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE280562BB3FC92000E33C0 /* SearchDeviceVC.swift */; };
+		2EE2805B2BB3FD43000E33C0 /* AssetsSearchDevice.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EE2805A2BB3FD43000E33C0 /* AssetsSearchDevice.xcassets */; };
+		2EE280602BBEBCBB000E33C0 /* SearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE2805F2BBEBCBB000E33C0 /* SearchCollectionViewCell.swift */; };
+		2EE2806B2BBFDE37000E33C0 /* EmotionsImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE2806A2BBFDE36000E33C0 /* EmotionsImpl.swift */; };
+		2EE2806D2BBFDE72000E33C0 /* BrainbitController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EE2806C2BBFDE72000E33C0 /* BrainbitController.swift */; };
+		2EE280722BBFDF66000E33C0 /* ObjcEx.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EE280702BBFDF66000E33C0 /* ObjcEx.m */; };
+		DA33C89F46A289550D996C07 /* Pods_BRAINBITmusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAACA1A6CF3D9FB3C708AFE4 /* Pods_BRAINBITmusic.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E3D16A32B3D8DEF006C7ACF /* BRAINBITmusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BRAINBITmusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E3D16A62B3D8DEF006C7ACF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E3D16AA2B3D8DEF006C7ACF /* InstructionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionVC.swift; sourceTree = "<group>"; };
+		2E3D16AD2B3D8DEF006C7ACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2E3D16AF2B3D8DF3006C7ACF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2E3D16B22B3D8DF3006C7ACF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2E3D16B42B3D8DF3006C7ACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E3D16BD2B3D909C006C7ACF /* Instructions.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Instructions.xcassets; sourceTree = "<group>"; };
+		2E3D16BF2B3D935F006C7ACF /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		2E3D16C22B3DAB4A006C7ACF /* GlavnaiaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlavnaiaVC.swift; sourceTree = "<group>"; };
+		2E3D16C42B3DAB60006C7ACF /* GlavnaiaAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = GlavnaiaAssets.xcassets; sourceTree = "<group>"; };
+		2E3D16C72B3DAF87006C7ACF /* ServiceCollcectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCollcectionViewCell.swift; sourceTree = "<group>"; };
+		2EA1C6B22B8F50350026E16D /* ServiseCVCAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ServiseCVCAssets.xcassets; sourceTree = "<group>"; };
+		2EA1C6B42B8F53E60026E16D /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		2EA1C6B72B9087300026E16D /* CollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EA1C6B92B9087700026E16D /* CollectionCVCAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CollectionCVCAssets.xcassets; sourceTree = "<group>"; };
+		2EA1C6BB2B908D950026E16D /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2EA1C6BD2B90A4C20026E16D /* CollectionOpenOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionOpenOne.swift; sourceTree = "<group>"; };
+		2EA1C6C02B90B0220026E16D /* PlayerAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlayerAssets.xcassets; sourceTree = "<group>"; };
+		2EA1C6C22B90CA700026E16D /* Vhod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vhod.swift; sourceTree = "<group>"; };
+		2EE280562BB3FC92000E33C0 /* SearchDeviceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDeviceVC.swift; sourceTree = "<group>"; };
+		2EE2805A2BB3FD43000E33C0 /* AssetsSearchDevice.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AssetsSearchDevice.xcassets; sourceTree = "<group>"; };
+		2EE2805F2BBEBCBB000E33C0 /* SearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		2EE2806A2BBFDE36000E33C0 /* EmotionsImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsImpl.swift; sourceTree = "<group>"; };
+		2EE2806C2BBFDE72000E33C0 /* BrainbitController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainbitController.swift; sourceTree = "<group>"; };
+		2EE2806E2BBFDF66000E33C0 /* BrainBitDemo-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BrainBitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2EE2806F2BBFDF66000E33C0 /* ObjcEx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcEx.h; sourceTree = "<group>"; };
+		2EE280702BBFDF66000E33C0 /* ObjcEx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcEx.m; sourceTree = "<group>"; };
+		705FBF20B15B4D2D05208865 /* Pods-BRAINBITmusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRAINBITmusic.release.xcconfig"; path = "Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic.release.xcconfig"; sourceTree = "<group>"; };
+		805FA53CCECAFF5FD9C8E692 /* Pods-BRAINBITmusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRAINBITmusic.debug.xcconfig"; path = "Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic.debug.xcconfig"; sourceTree = "<group>"; };
+		BAACA1A6CF3D9FB3C708AFE4 /* Pods_BRAINBITmusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRAINBITmusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E3D16A02B3D8DEF006C7ACF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA33C89F46A289550D996C07 /* Pods_BRAINBITmusic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E3D169A2B3D8DEF006C7ACF = {
+			isa = PBXGroup;
+			children = (
+				2E3D16A52B3D8DEF006C7ACF /* BRAINBITmusic */,
+				2E3D16A42B3D8DEF006C7ACF /* Products */,
+				5B495365C7A0408AA96ED1D5 /* Pods */,
+				9A2606C4320F90719BFAF040 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2E3D16A42B3D8DEF006C7ACF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E3D16A32B3D8DEF006C7ACF /* BRAINBITmusic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E3D16A52B3D8DEF006C7ACF /* BRAINBITmusic */ = {
+			isa = PBXGroup;
+			children = (
+				2EE280712BBFDF66000E33C0 /* Exceptions */,
+				2E3D16A62B3D8DEF006C7ACF /* AppDelegate.swift */,
+				2EDD9D842B4592D400DAB637 /* Instruction */,
+				2E3D16C12B3DAB30006C7ACF /* Glavnaia */,
+				2E8533E32BA2F6A60057270A /* Autorization */,
+				2EE280552BB3FC72000E33C0 /* ConnectDevice */,
+				2EA1C6BF2B90B00C0026E16D /* Player */,
+				2E3D16AC2B3D8DEF006C7ACF /* Main.storyboard */,
+				2E3D16AF2B3D8DF3006C7ACF /* Assets.xcassets */,
+				2E3D16B12B3D8DF3006C7ACF /* LaunchScreen.storyboard */,
+				2E3D16BF2B3D935F006C7ACF /* Const.swift */,
+				2E3D16B42B3D8DF3006C7ACF /* Info.plist */,
+			);
+			path = BRAINBITmusic;
+			sourceTree = "<group>";
+		};
+		2E3D16C12B3DAB30006C7ACF /* Glavnaia */ = {
+			isa = PBXGroup;
+			children = (
+				2E3D16C22B3DAB4A006C7ACF /* GlavnaiaVC.swift */,
+				2EA1C6B42B8F53E60026E16D /* ImageService.swift */,
+				2E3D16C42B3DAB60006C7ACF /* GlavnaiaAssets.xcassets */,
+				2E3D16C62B3DAF56006C7ACF /* CollectionViewMusicServise */,
+				2EA1C6B62B9086C50026E16D /* CollectionViewCollection */,
+			);
+			path = Glavnaia;
+			sourceTree = "<group>";
+		};
+		2E3D16C62B3DAF56006C7ACF /* CollectionViewMusicServise */ = {
+			isa = PBXGroup;
+			children = (
+				2E3D16C72B3DAF87006C7ACF /* ServiceCollcectionViewCell.swift */,
+				2EA1C6B22B8F50350026E16D /* ServiseCVCAssets.xcassets */,
+			);
+			path = CollectionViewMusicServise;
+			sourceTree = "<group>";
+		};
+		2E8533E32BA2F6A60057270A /* Autorization */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1C6C22B90CA700026E16D /* Vhod.swift */,
+			);
+			path = Autorization;
+			sourceTree = "<group>";
+		};
+		2EA1C6B62B9086C50026E16D /* CollectionViewCollection */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1C6B72B9087300026E16D /* CollectionCollectionViewCell.swift */,
+				2EA1C6BD2B90A4C20026E16D /* CollectionOpenOne.swift */,
+				2EA1C6B92B9087700026E16D /* CollectionCVCAssets.xcassets */,
+			);
+			path = CollectionViewCollection;
+			sourceTree = "<group>";
+		};
+		2EA1C6BF2B90B00C0026E16D /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				2EA1C6BB2B908D950026E16D /* Player.swift */,
+				2EA1C6C02B90B0220026E16D /* PlayerAssets.xcassets */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		2EDD9D842B4592D400DAB637 /* Instruction */ = {
+			isa = PBXGroup;
+			children = (
+				2E3D16AA2B3D8DEF006C7ACF /* InstructionVC.swift */,
+				2E3D16BD2B3D909C006C7ACF /* Instructions.xcassets */,
+			);
+			path = Instruction;
+			sourceTree = "<group>";
+		};
+		2EE280552BB3FC72000E33C0 /* ConnectDevice */ = {
+			isa = PBXGroup;
+			children = (
+				2EE280562BB3FC92000E33C0 /* SearchDeviceVC.swift */,
+				2EE2806A2BBFDE36000E33C0 /* EmotionsImpl.swift */,
+				2EE2806C2BBFDE72000E33C0 /* BrainbitController.swift */,
+				2EE2805E2BBEBC92000E33C0 /* CollectionViewSearchViewCell */,
+				2EE2805A2BB3FD43000E33C0 /* AssetsSearchDevice.xcassets */,
+			);
+			path = ConnectDevice;
+			sourceTree = "<group>";
+		};
+		2EE2805E2BBEBC92000E33C0 /* CollectionViewSearchViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2EE2805F2BBEBCBB000E33C0 /* SearchCollectionViewCell.swift */,
+			);
+			path = CollectionViewSearchViewCell;
+			sourceTree = "<group>";
+		};
+		2EE280712BBFDF66000E33C0 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				2EE2806E2BBFDF66000E33C0 /* BrainBitDemo-Bridging-Header.h */,
+				2EE2806F2BBFDF66000E33C0 /* ObjcEx.h */,
+				2EE280702BBFDF66000E33C0 /* ObjcEx.m */,
+			);
+			path = Exceptions;
+			sourceTree = "<group>";
+		};
+		5B495365C7A0408AA96ED1D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				805FA53CCECAFF5FD9C8E692 /* Pods-BRAINBITmusic.debug.xcconfig */,
+				705FBF20B15B4D2D05208865 /* Pods-BRAINBITmusic.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9A2606C4320F90719BFAF040 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAACA1A6CF3D9FB3C708AFE4 /* Pods_BRAINBITmusic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E3D16A22B3D8DEF006C7ACF /* BRAINBITmusic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E3D16B72B3D8DF3006C7ACF /* Build configuration list for PBXNativeTarget "BRAINBITmusic" */;
+			buildPhases = (
+				73558D310AE7943EC57FA8EC /* [CP] Check Pods Manifest.lock */,
+				2E3D169F2B3D8DEF006C7ACF /* Sources */,
+				2E3D16A02B3D8DEF006C7ACF /* Frameworks */,
+				2E3D16A12B3D8DEF006C7ACF /* Resources */,
+				DE285FEF43CA7D44E1AFAB05 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BRAINBITmusic;
+			productName = BRAINBITmusic;
+			productReference = 2E3D16A32B3D8DEF006C7ACF /* BRAINBITmusic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E3D169B2B3D8DEF006C7ACF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					2E3D16A22B3D8DEF006C7ACF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 2E3D169E2B3D8DEF006C7ACF /* Build configuration list for PBXProject "BRAINBITmusic" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E3D169A2B3D8DEF006C7ACF;
+			productRefGroup = 2E3D16A42B3D8DEF006C7ACF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E3D16A22B3D8DEF006C7ACF /* BRAINBITmusic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E3D16A12B3D8DEF006C7ACF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA1C6BA2B9087700026E16D /* CollectionCVCAssets.xcassets in Resources */,
+				2EE2805B2BB3FD43000E33C0 /* AssetsSearchDevice.xcassets in Resources */,
+				2EA1C6C12B90B0220026E16D /* PlayerAssets.xcassets in Resources */,
+				2E3D16B32B3D8DF3006C7ACF /* LaunchScreen.storyboard in Resources */,
+				2E3D16B02B3D8DF3006C7ACF /* Assets.xcassets in Resources */,
+				2E3D16BE2B3D909C006C7ACF /* Instructions.xcassets in Resources */,
+				2E3D16AE2B3D8DEF006C7ACF /* Main.storyboard in Resources */,
+				2E3D16C52B3DAB60006C7ACF /* GlavnaiaAssets.xcassets in Resources */,
+				2EA1C6B32B8F50350026E16D /* ServiseCVCAssets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		73558D310AE7943EC57FA8EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BRAINBITmusic-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE285FEF43CA7D44E1AFAB05 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E3D169F2B3D8DEF006C7ACF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EE2806D2BBFDE72000E33C0 /* BrainbitController.swift in Sources */,
+				2E3D16AB2B3D8DEF006C7ACF /* InstructionVC.swift in Sources */,
+				2E3D16C02B3D935F006C7ACF /* Const.swift in Sources */,
+				2EE280602BBEBCBB000E33C0 /* SearchCollectionViewCell.swift in Sources */,
+				2EE2806B2BBFDE37000E33C0 /* EmotionsImpl.swift in Sources */,
+				2EE280722BBFDF66000E33C0 /* ObjcEx.m in Sources */,
+				2EE280572BB3FC92000E33C0 /* SearchDeviceVC.swift in Sources */,
+				2EA1C6C32B90CA700026E16D /* Vhod.swift in Sources */,
+				2EA1C6B82B9087300026E16D /* CollectionCollectionViewCell.swift in Sources */,
+				2E3D16A72B3D8DEF006C7ACF /* AppDelegate.swift in Sources */,
+				2EA1C6BC2B908D950026E16D /* Player.swift in Sources */,
+				2EA1C6BE2B90A4C20026E16D /* CollectionOpenOne.swift in Sources */,
+				2E3D16C82B3DAF87006C7ACF /* ServiceCollcectionViewCell.swift in Sources */,
+				2E3D16C32B3DAB4A006C7ACF /* GlavnaiaVC.swift in Sources */,
+				2EA1C6B52B8F53E60026E16D /* ImageService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E3D16AC2B3D8DEF006C7ACF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E3D16AD2B3D8DEF006C7ACF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2E3D16B12B3D8DF3006C7ACF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E3D16B22B3D8DF3006C7ACF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E3D16B52B3D8DF3006C7ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E3D16B62B3D8DF3006C7ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E3D16B82B3D8DF3006C7ACF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 805FA53CCECAFF5FD9C8E692 /* Pods-BRAINBITmusic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HP2JJLJ88;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BRAINBITmusic/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Для поиска устройств";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sachko.expensesSachko.BRAINBITmusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BRAINBITmusic/Exceptions/BrainBitDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2E3D16B92B3D8DF3006C7ACF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 705FBF20B15B4D2D05208865 /* Pods-BRAINBITmusic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5HP2JJLJ88;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BRAINBITmusic/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Для поиска устройств";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sachko.expensesSachko.BRAINBITmusic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BRAINBITmusic/Exceptions/BrainBitDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E3D169E2B3D8DEF006C7ACF /* Build configuration list for PBXProject "BRAINBITmusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3D16B52B3D8DF3006C7ACF /* Debug */,
+				2E3D16B62B3D8DF3006C7ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E3D16B72B3D8DF3006C7ACF /* Build configuration list for PBXNativeTarget "BRAINBITmusic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E3D16B82B3D8DF3006C7ACF /* Debug */,
+				2E3D16B92B3D8DF3006C7ACF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E3D169B2B3D8DEF006C7ACF /* Project object */;
+}

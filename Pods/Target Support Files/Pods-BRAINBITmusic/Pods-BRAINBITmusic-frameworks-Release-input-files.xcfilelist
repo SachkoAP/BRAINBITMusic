@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-BRAINBITmusic/Pods-BRAINBITmusic-frameworks.sh
+${PODS_XCFRAMEWORKS_BUILD_DIR}/em-st-artifacts/EmStArtifacts.framework/EmStArtifacts
+${PODS_XCFRAMEWORKS_BUILD_DIR}/neurosdk2/neurosdk2.framework/neurosdk2

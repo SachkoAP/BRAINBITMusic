@@ -1,0 +1,2 @@
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EmStArtifacts.framework
+${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/neurosdk2.framework

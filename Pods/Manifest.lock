@@ -1,0 +1,20 @@
+PODS:
+  - em-st-artifacts (1.0.2)
+  - neurosdk2 (1.0.10)
+
+DEPENDENCIES:
+  - em-st-artifacts (= 1.0.2)
+  - neurosdk2 (~> 1.0.10)
+
+SPEC REPOS:
+  trunk:
+    - em-st-artifacts
+    - neurosdk2
+
+SPEC CHECKSUMS:
+  em-st-artifacts: 7e042ec1902a3f3609dd900648a5bb8c16681a51
+  neurosdk2: 06e2bc0ae9a37f14bb33c4c1707ba9a08d249e9b
+
+PODFILE CHECKSUM: af5f2cb5039d78d9d64464b2bb5285215263d0c7
+
+COCOAPODS: 1.15.2
