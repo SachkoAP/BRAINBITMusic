@@ -1,8 +1,8 @@
 //
 //  EmotionsImpl.swift
-//  BRAINBITmusic
+//  BrainBitDemo
 //
-//  Created by Sap on 05.04.2024.
+//  Created by Aseatari on 01.08.2023.
 //
 
 import Foundation
@@ -15,7 +15,7 @@ typealias ProgressCallback = (_ progress: UInt32) -> Void
 
 class EmotionsImpl {
     
-    var emotionalMath: EMEmotionalMath?
+    var emotionalMath : EMEmotionalMath?
     var isEmotionalMathInited = false
     
     private let mathLibSetting = EMMathLibSetting(samplingRate: 250,
@@ -52,30 +52,33 @@ class EmotionsImpl {
     var showLastSpectralDataCallback: LastSpectralDataCallback?
     
     public func initEmotionMath() {
-        if isEmotionalMathInited {
-            emotionalMath = nil
+        if(isEmotionalMathInited){
+            emotionalMath = nil;
             isEmotionalMathInited = false
             isCalibrated = false
         }
-        if !isEmotionalMathInited {
+        if ( !isEmotionalMathInited ) {
             emotionalMath = EMEmotionalMath(libSettings: mathLibSetting, andArtifactDetetectSettings: artifactDetectSetting, andShortArtifactDetectSettigns: shortArtifactDetectSetting, andMentalAndSpectralSettings: mentalAndSpectralSetting)
             isEmotionalMathInited = true
         }
     }
     
-    public func startProcessingData() {
-        // Инициализируем EmotionsMath
-        initEmotionMath()
-        
-        // Начинаем обработку данных
+    public func start() {
+        if (!isCalibrated) {
+            emotionalMath?.startCalibration()
+        }
         startSignal()
+    }
+    
+    public func stop() {
+        BrainbitController.shared.stopSignal()
     }
     
     private func startSignal() {
         BrainbitController.shared.startSignal { [self] data in
             queue.async(flags: .barrier) { [self] in
-                var bipolarArray: [EMRawChannels] = []
-                for sample in data {
+                var bipolarArray : [EMRawChannels] = []
+                for sample in data{
                     let bipolarElement = EMRawChannels(leftBipolar: sample.t3.doubleValue - sample.o1.doubleValue, andRightBipolar: sample.t4.doubleValue - sample.o2.doubleValue)
                     bipolarArray.append(bipolarElement!)
                 }
@@ -84,9 +87,10 @@ class EmotionsImpl {
                 
                 getIsAtifacted()
                 
-                if !isCalibrated {
+                if (!isCalibrated) {
                     processCalibration()
-                } else {
+                }
+                else {
                     calcData()
                     getSpectralData()
                 }
@@ -95,7 +99,7 @@ class EmotionsImpl {
     }
     
     private func processCalibration() {
-        if emotionalMath?.calibrationFinished() ?? false {
+        if (emotionalMath?.calibrationFinished() ?? false) {
             isCalibrated = true
         }
         let progress = emotionalMath?.getCallibrationPercents()
@@ -104,7 +108,7 @@ class EmotionsImpl {
     
     private func calcData() {
         let mindData = emotionalMath?.readMentalDataArr()
-        if mindData != nil && !mindData!.isEmpty {
+        if (mindData != nil && !mindData!.isEmpty) {
             showLastMindDataCallback?(mindData?.last ?? EMMindData(relAttention: 0.0, andRelRelax: 0.0, andInstAttention: 0.0, andInstRelax: 0.0))
         }
     }
@@ -112,16 +116,23 @@ class EmotionsImpl {
     private func getSpectralData() {
         let spectralData = emotionalMath?.mathLibReadSpectralDataPercentsArr()
         let lastSpectralData = spectralData?.last ?? EMSpectralDataPercents()
-        if lastSpectralData.alpha > 0 &&
+        if(lastSpectralData.alpha > 0 &&
            lastSpectralData.beta > 0 &&
            lastSpectralData.theta > 0 &&
            lastSpectralData.delta > 0 &&
-           lastSpectralData.gamma > 0 {
+           lastSpectralData.gamma > 0){
             showLastSpectralDataCallback?(lastSpectralData)
         }
+        
     }
     
     private func getIsAtifacted() {
-        showIsArtifactedCallback?(isCalibrated ? (emotionalMath?.isArtifactedSequence())! : (emotionalMath?.isBothSidesArtifacted())!)
+        if let emotionalMath = emotionalMath {
+            showIsArtifactedCallback?(isCalibrated ? emotionalMath.isArtifactedSequence() : emotionalMath.isBothSidesArtifacted())
+        } else {
+            print("Emotional math is not initialized!")
+        }
+
+//        showIsArtifactedCallback?(isCalibrated ? (emotionalMath?.isArtifactedSequence())! : (emotionalMath?.isBothSidesArtifacted())!)
     }
 }

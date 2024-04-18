@@ -5,8 +5,6 @@ import EmStArtifacts
 class SearchDeviceVC: UIViewController {
     
     private var scanner: NTScanner?
-//    private var sensors: [NTSensorInfo] = []
-    private var emotionsImpl = EmotionsImpl() // Создаем экземпляр EmotionsImpl
     var devices: [NTSensorInfo] = [NTSensorInfo]()
 
     private let myDeviceTitle: UIImageView = {
@@ -35,8 +33,6 @@ class SearchDeviceVC: UIViewController {
         indicator.hidesWhenStopped = true
         return indicator
     }()
-    private var printTimer: Timer?
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,31 +57,11 @@ class SearchDeviceVC: UIViewController {
                 self.activityIndicator.stopAnimating()
             }
         })
-        emotionsImpl.calibrationProgressCallback = showCalibrationProgress
-        emotionsImpl.showIsArtifactedCallback = showIsArtifacted
-        emotionsImpl.showLastMindDataCallback = showLastMindData
 
         // Запускаем кружок загрузки
         activityIndicator.startAnimating()
     }
     
-    private func showCalibrationProgress(_ progress: UInt32) {
-        DispatchQueue.main.async { [self] in
-            print("Calibration \(String(format: "%d", progress))")
-        }
-    }
-    private func showIsArtifacted(artifacted: Bool) {
-        DispatchQueue.main.async { [self] in
-            print(artifacted ? "Is Artifacted" : "Not Artifacted")
-        }
-    }
-
-    private func showLastMindData(mindData: EMMindData) {
-        DispatchQueue.main.async { [self] in
-            print("Relaxation: \(mindData.instRelaxation) %")
-            print("Attention: \(mindData.instAttention) %")
-        }
-    }
 
     override func viewDidDisappear(_ animated: Bool) {
         BrainbitController.shared.stpoSearch()
@@ -118,6 +94,7 @@ extension SearchDeviceVC: UICollectionViewDataSource, UICollectionViewDelegate {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("Tap on BrainBit устройтсво")
         BrainbitController.shared.createAndConnect(sensorInfo: devices[indexPath.row], onConnectionResult: { state in
             DispatchQueue.main.async {
                 self.navigationController?.popViewController(animated: true)

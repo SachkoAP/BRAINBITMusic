@@ -7,6 +7,7 @@
 
 import UIKit
 import MediaPlayer
+import EmStArtifacts
 
 struct TrackInfo {
     var image: UIImage
@@ -17,6 +18,7 @@ struct TrackInfo {
 class Player: UIViewController {
     var trackOneInfo = [TrackInfo]()
     var player : AVPlayer!
+    private var emotionsImpl : EmotionsImpl = EmotionsImpl()
     private let trackImage: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -122,6 +124,12 @@ class Player: UIViewController {
                 self?.updateTimeLabels()
             }
         }
+
+
+        emotionsImpl.initEmotionMath()
+        emotionsImpl.calibrationProgressCallback = showCalibrationProgress
+        emotionsImpl.showLastMindDataCallback = showLastMindData
+
         
         view.addSubview(trackImage)
         view.addSubview(nameTrack)
@@ -137,6 +145,19 @@ class Player: UIViewController {
         addActions()
     }
     
+    private func showCalibrationProgress(_ progress: UInt32) {
+        DispatchQueue.main.async { [self] in
+            print("Calibration \(String(format: "%d", progress))")
+        }
+    }
+
+    private func showLastMindData(mindData: EMMindData) {
+        DispatchQueue.main.async { [self] in
+            print("Relaxation: \(mindData.instRelaxation) %")
+            print("Attention: \(mindData.instAttention) %")
+        }
+    }
+
     func updateTimeLabels() {
            let currentTime = CMTimeGetSeconds(player.currentTime())
            let duration = CMTimeGetSeconds(player.currentItem?.duration ?? CMTime.zero)
@@ -168,8 +189,10 @@ class Player: UIViewController {
             buttonPlay.addAction(UIAction(handler: { [weak self] _ in
                 if self!.player.rate > 0 {
                     self!.player.pause()
+                    self!.emotionsImpl.stop()
                 } else {
                     self!.player.play()
+                    self!.emotionsImpl.start()
                 }
             }), for: .touchUpInside)
 

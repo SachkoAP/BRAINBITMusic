@@ -160,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				2EA1C6BB2B908D950026E16D /* Player.swift */,
+				2EE2806A2BBFDE36000E33C0 /* EmotionsImpl.swift */,
 				2EA1C6C02B90B0220026E16D /* PlayerAssets.xcassets */,
 			);
 			path = Player;
@@ -178,7 +179,6 @@
 			isa = PBXGroup;
 			children = (
 				2EE280562BB3FC92000E33C0 /* SearchDeviceVC.swift */,
-				2EE2806A2BBFDE36000E33C0 /* EmotionsImpl.swift */,
 				2EE2806C2BBFDE72000E33C0 /* BrainbitController.swift */,
 				2EE2805E2BBEBC92000E33C0 /* CollectionViewSearchViewCell */,
 				2EE2805A2BB3FD43000E33C0 /* AssetsSearchDevice.xcassets */,
