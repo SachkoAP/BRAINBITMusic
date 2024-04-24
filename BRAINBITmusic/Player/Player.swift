@@ -15,9 +15,17 @@ struct TrackInfo {
     var nameWriter: String
 }
 
+
 class Player: UIViewController {
-    var trackOneInfo = [TrackInfo]()
+    var trackOneInfo = [TrackInfo]() {
+        didSet {
+            dataDictionary["relax"] = []
+            dataDictionary["concentration"] = []
+        }
+    }
     var player : AVPlayer!
+    var dataDictionary: [String: [Double]] = ["relax": [], "concentration": []]
+
     private var emotionsImpl : EmotionsImpl = EmotionsImpl()
     private let trackImage: UIImageView = {
         let imageView = UIImageView()
@@ -153,8 +161,10 @@ class Player: UIViewController {
 
     private func showLastMindData(mindData: EMMindData) {
         DispatchQueue.main.async { [self] in
-            print("Relaxation: \(mindData.instRelaxation) %")
-            print("Attention: \(mindData.instAttention) %")
+            let relaxation = mindData.instRelaxation
+            let attention = mindData.instAttention
+            dataDictionary["relax"]?.append(relaxation)
+            dataDictionary["concentration"]?.append(attention)
         }
     }
 
@@ -190,6 +200,7 @@ class Player: UIViewController {
                 if self!.player.rate > 0 {
                     self!.player.pause()
                     self!.emotionsImpl.stop()
+                    print(self!.dataDictionary)
                 } else {
                     self!.player.play()
                     self!.emotionsImpl.start()
