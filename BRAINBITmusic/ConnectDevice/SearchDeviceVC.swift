@@ -6,13 +6,15 @@ class SearchDeviceVC: UIViewController {
     
     private var scanner: NTScanner?
     var devices: [NTSensorInfo] = [NTSensorInfo]()
+    weak var connectionObserver: ConnectionObserver?
+
 
     private let myDeviceTitle: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFill
         imageView.clipsToBounds = true
-        imageView.image = Image.Device.myDeviceTitle
+        imageView.image = Image.SearchDevice.myDeviceTitle
         return imageView
     }()
     
@@ -60,8 +62,16 @@ class SearchDeviceVC: UIViewController {
 
         // Запускаем кружок загрузки
         activityIndicator.startAnimating()
+        setupTabbarItem()
     }
     
+    private func setupTabbarItem() {
+        tabBarItem = UITabBarItem(
+            title: "",
+            image: Image.SearchDevice.deviceTabBarImage,
+            tag: 2
+        )
+    }
 
     override func viewDidDisappear(_ animated: Bool) {
         BrainbitController.shared.stpoSearch()
@@ -97,11 +107,12 @@ extension SearchDeviceVC: UICollectionViewDataSource, UICollectionViewDelegate {
         print("Tap on BrainBit устройтсво")
         BrainbitController.shared.createAndConnect(sensorInfo: devices[indexPath.row], onConnectionResult: { state in
             DispatchQueue.main.async {
+                self.connectionObserver?.deviceConnected()
                 self.navigationController?.popViewController(animated: true)
             }
         })
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SearchCollectionViewCell.reuseId, for: indexPath) as! SearchCollectionViewCell
         let devInfo = devices[indexPath.row]

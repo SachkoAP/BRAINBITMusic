@@ -16,6 +16,8 @@ enum Image {
     }
     
     enum Glavnaia {
+        static var glavnaiaTabBarImage = UIImage(named: "glavnaiaTabBarImage")
+        
         static var wheareListen = UIImage(named: "wheareListen")
         static var photoUser = UIImage(named: "photoUser")
         static var nameUser = UIImage(named: "nameUser")
@@ -41,10 +43,20 @@ enum Image {
         static var buttonRightMusic = UIImage(named: "buttonRightMusic")
         
         static var imageFromTrack = UIImage(named: "imageFromTrack")
+        static var imageFromTrack2 = UIImage(named: "imageFromTrack2")
         static var imageVhod = UIImage(named: "Vhod")
     }
     
-    enum Device {
+    enum SearchDevice {
         static var myDeviceTitle = UIImage(named: "myDevice")
+        static var deviceTabBarImage = UIImage(named: "deviceTabBarImage")
+    }
+    
+    enum MyTrack {
+        static var mytrackTabBarImage = UIImage(named: "myTrackTabBarImage")
+    }
+    
+    enum Search {
+        static var searchTabBarImage = UIImage(named: "searchTabBarImage")
     }
 }

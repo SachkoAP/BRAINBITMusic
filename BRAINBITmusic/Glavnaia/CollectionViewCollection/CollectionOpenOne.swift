@@ -75,14 +75,6 @@ class CollectionOpenOne: UIViewController {
             collectionNameImage.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
             collectionNameImage.heightAnchor.constraint(equalToConstant: 420),
             collectionNameImage.widthAnchor.constraint(equalToConstant: 345),
-            
-//            textOnButtonBuy.topAnchor.constraint(equalTo: freshImage.bottomAnchor, constant: 32),
-//            textOnButtonBuy.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
-//                        
-//            buttonBuy.leadingAnchor.constraint(equalTo: textOnButtonBuy.leadingAnchor, constant: -10),
-//            buttonBuy.trailingAnchor.constraint(equalTo: textOnButtonBuy.trailingAnchor, constant: 10),
-//            buttonBuy.topAnchor.constraint(equalTo: textOnButtonBuy.topAnchor, constant: -20),
-//            buttonBuy.bottomAnchor.constraint(equalTo: textOnButtonBuy.bottomAnchor, constant: 20),
         ])
     }
 

@@ -15,4 +15,11 @@ struct ServiceCollection {
 struct CollectionCollection {
     let id: Int
     let image: UIImage
+    let listTracks: [TrackInfo]
+}
+
+struct PlaylistCollection {
+    let id: Int
+    let image: UIImage
+    let listTracks: [TrackInfo]
 }

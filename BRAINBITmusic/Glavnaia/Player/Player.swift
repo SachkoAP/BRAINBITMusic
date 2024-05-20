@@ -13,8 +13,8 @@ struct TrackInfo {
     var image: UIImage
     var name: String
     var nameWriter: String
+    var dataCalibration: [Double]
 }
-
 
 class Player: UIViewController {
     var trackOneInfo = [TrackInfo]() {
@@ -25,7 +25,6 @@ class Player: UIViewController {
     }
     var player : AVPlayer!
     var dataDictionary: [String: [Double]] = ["relax": [], "concentration": []]
-
     private var emotionsImpl : EmotionsImpl = EmotionsImpl()
     private let trackImage: UIImageView = {
         let imageView = UIImageView()
@@ -115,10 +114,8 @@ class Player: UIViewController {
         DispatchQueue.main.async {
             self.player = AVPlayer(url: URL(string: "https://fotodushi.ru/mus/priroda/01_Leo_Rojas-Serenade_to_Mother_Earth.mp3")!)
             
-            // Установка начальных значений для меток времени
-            self.currentTimeLabel.text = "0:00" // Начальное текущее время
+            self.currentTimeLabel.text = "0:00"
             
-            // Для установки начального оставшегося времени трека, необходимо сначала загрузить информацию о треке
             if let duration = self.player.currentItem?.asset.duration, !duration.isIndefinite {
                 let totalSeconds = CMTimeGetSeconds(duration)
                 self.remainingTimeLabel.text = self.formatTime(seconds: totalSeconds)
@@ -173,7 +170,6 @@ class Player: UIViewController {
            let duration = CMTimeGetSeconds(player.currentItem?.duration ?? CMTime.zero)
            let remainingTime = duration - currentTime
            
-           // Форматирование и отображение времени
            currentTimeLabel.text = formatTime(seconds: currentTime)
            remainingTimeLabel.text = "-\(formatTime(seconds: remainingTime))"
        }
@@ -200,7 +196,10 @@ class Player: UIViewController {
                 if self!.player.rate > 0 {
                     self!.player.pause()
                     self!.emotionsImpl.stop()
-                    print(self!.dataDictionary)
+//                    print()
+                    self!.addTrackToMassiv()
+                    self!.trackOneInfo[0].dataCalibration = [ProcessingDataWithBrainBit().getAnswerMindData(self?.dataDictionary ?? [:])]
+                    
                 } else {
                     self!.player.play()
                     self!.emotionsImpl.start()
@@ -208,6 +207,15 @@ class Player: UIViewController {
             }), for: .touchUpInside)
 
         }
+    
+    private func addTrackToMassiv() {
+        if TrackMassiv().massiv[0].name == trackOneInfo[0].name {
+//            TrackMassiv().massiv
+        } else {
+            TrackMassiv().massiv.append(trackOneInfo[0])
+        }
+    }
+    
     //MARK: setConstrains
             
     private func setConstrains(){

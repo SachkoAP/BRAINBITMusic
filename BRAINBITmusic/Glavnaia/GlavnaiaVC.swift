@@ -1,9 +1,13 @@
 import Foundation
 import UIKit
+import neurosdk2
 
-class GlavnaiaVC : UIViewController {
+class GlavnaiaVC : UIViewController, ConnectionObserver {
+    
     private var cellsService : [ServiceCollection] = []
     private var cellsCollection: [CollectionCollection] = []
+    weak var connectionObserver: ConnectionObserver?
+
     private let photoNoRegUser: UIButton = {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -77,7 +81,8 @@ class GlavnaiaVC : UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .black
-        
+        self.connectionObserver = self
+
         //service
         collectionViewService.register(ServiceCollcectionViewCell.self, forCellWithReuseIdentifier: ServiceCollcectionViewCell.reuseId)
         collectionViewService.dataSource = self
@@ -104,7 +109,7 @@ class GlavnaiaVC : UIViewController {
         collectionViewCollection.showsHorizontalScrollIndicator = false
         collectionViewCollection.backgroundColor = .clear
         
-        cellsCollection = [CollectionCollection(id: 0, image: Image.Glavnaia.imageRelaxCVC!), CollectionCollection(id: 1, image: Image.Glavnaia.imageSleepCVC!), CollectionCollection(id: 2, image: Image.Glavnaia.imageWorkCVC!)]
+        cellsCollection = [CollectionCollection(id: 0, image: Image.Glavnaia.imageRelaxCVC!, listTracks: [TrackInfo(image: Image.Player.imageFromTrack!, name: "Arcade", nameWriter: "Dumcan Laurence", dataCalibration: [0.0]), TrackInfo(image: Image.Player.imageFromTrack2!, name: "Save Your Tears", nameWriter: "The Weekend", dataCalibration: [0.0])]), CollectionCollection(id: 1, image: Image.Glavnaia.imageSleepCVC!, listTracks: [TrackInfo(image: Image.Player.imageFromTrack!, name: "Arcade", nameWriter: "Dumcan Laurence", dataCalibration: [0.0])]), CollectionCollection(id: 2, image: Image.Glavnaia.imageWorkCVC!, listTracks: [TrackInfo(image: Image.Player.imageFromTrack!, name: "Arcade", nameWriter: "Dumcan Laurence", dataCalibration: [0.0])])]
         
         view.addSubview(photoNoRegUser)
         view.addSubview(nameUser)
@@ -142,14 +147,29 @@ class GlavnaiaVC : UIViewController {
         showWindow()
         addActions()
         setupConstraint()
+        setupTabbarItem()
     }
+    
+    private func setupTabbarItem() {
+        tabBarItem = UITabBarItem(
+            title: "",
+            image: Image.Glavnaia.glavnaiaTabBarImage,
+            tag: 1
+        )
+    }
+
+    
+    func deviceConnected() {
+        print("Yep!")
+        hideWindow()
+    }
+
     
     @objc func handleTapGesture(_ gesture: UITapGestureRecognizer) {
         let vc = SearchDeviceVC()
         navigationController?.pushViewController(vc, animated: true)
     }
 
-    
     private func addActions() {
         photoNoRegUser.addAction(UIAction(handler: { [weak self] _ in
             let vc = Vhod()
@@ -195,15 +215,12 @@ class GlavnaiaVC : UIViewController {
         
         switch gesture.state {
         case .changed:
-            // Изменяем положение окна при свайпе
             backGroundNotConnectedDevice.frame.origin.y += translation.y
             gesture.setTranslation(.zero, in: self.view)
         case .ended:
             if velocity.y < -500 || backGroundNotConnectedDevice.frame.origin.y > UIScreen.main.bounds.height / 2 {
-                // Если свайп был достаточно быстрым вверх или окно было перетащено на большую часть экрана, скрываем его
                 hideWindow()
             } else {
-                // Иначе, возвращаем окно обратно на экран
                 showWindow()
             }
         default:
@@ -211,14 +228,12 @@ class GlavnaiaVC : UIViewController {
         }
     }
 
-    // Функция для скрытия окна
     func hideWindow() {
         UIView.animate(withDuration: 0.5) {
             self.backGroundNotConnectedDevice.frame.origin.y = -UIScreen.main.bounds.height
         }
     }
 
-    // Функция для показа окна
     func showWindow() {
         UIView.animate(withDuration: 0.5) {
             self.backGroundNotConnectedDevice.frame.origin.y = 0
@@ -273,15 +288,23 @@ extension GlavnaiaVC: UICollectionViewDelegate {
 //            present(vc, animated: true, completion: nil)
 
         } else if collectionView == self.collectionViewCollection {
-            let vc = Player()
-//            vc.trackOneInfo = cellsCollection[indexPath.row]
-            vc.trackOneInfo = [TrackInfo(image: Image.Player.imageFromTrack!, name: "Arcade", nameWriter: "Dumcan Laurence")]
+//            let vc = Player()
+////            vc.trackOneInfo = cellsCollection[indexPath.row]
+//            vc.trackOneInfo = [TrackInfo(image: Image.Player.imageFromTrack!, name: "Arcade", nameWriter: "Dumcan Laurence", dataCalibration: [0.0])]
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true, completion: nil)
+            
+            let vc = PlaylistVC(playlistInfo: cellsCollection[indexPath.row])
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true, completion: nil)
+
         }
     }
 }
 
+protocol ConnectionObserver: AnyObject {
+    func deviceConnected()
+}
 
 //расширение библиотеки с цветом для облегчения его указания
 extension UIColor {
