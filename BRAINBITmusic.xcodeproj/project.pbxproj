@@ -24,6 +24,7 @@
 		2E8077B82BF61B3600D2937F /* SearchAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8077B72BF61B3600D2937F /* SearchAssets.xcassets */; };
 		2E8077BE2BF628BA00D2937F /* PlaylistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8077BD2BF628BA00D2937F /* PlaylistVC.swift */; };
 		2E8077C12BF6346300D2937F /* TrackCollcectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8077C02BF6346300D2937F /* TrackCollcectionViewCell.swift */; };
+		2E8077C92BFD0D5300D2937F /* PlaylistAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E8077C82BFD0D5300D2937F /* PlaylistAssets.xcassets */; };
 		2EA1C6B32B8F50350026E16D /* ServiseCVCAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA1C6B22B8F50350026E16D /* ServiseCVCAssets.xcassets */; };
 		2EA1C6B52B8F53E60026E16D /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1C6B42B8F53E60026E16D /* ImageService.swift */; };
 		2EA1C6B82B9087300026E16D /* CollectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA1C6B72B9087300026E16D /* CollectionCollectionViewCell.swift */; };
@@ -63,6 +64,7 @@
 		2E8077B72BF61B3600D2937F /* SearchAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SearchAssets.xcassets; sourceTree = "<group>"; };
 		2E8077BD2BF628BA00D2937F /* PlaylistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistVC.swift; sourceTree = "<group>"; };
 		2E8077C02BF6346300D2937F /* TrackCollcectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCollcectionViewCell.swift; sourceTree = "<group>"; };
+		2E8077C82BFD0D5300D2937F /* PlaylistAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PlaylistAssets.xcassets; sourceTree = "<group>"; };
 		2EA1C6B22B8F50350026E16D /* ServiseCVCAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ServiseCVCAssets.xcassets; sourceTree = "<group>"; };
 		2EA1C6B42B8F53E60026E16D /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
 		2EA1C6B72B9087300026E16D /* CollectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				2E8077BD2BF628BA00D2937F /* PlaylistVC.swift */,
+				2E8077C82BFD0D5300D2937F /* PlaylistAssets.xcassets */,
 				2E8077BF2BF6344000D2937F /* CollectionViewTracks */,
 			);
 			path = Playlist;
@@ -344,6 +347,7 @@
 				2EE2805B2BB3FD43000E33C0 /* AssetsSearchDevice.xcassets in Resources */,
 				2EA1C6C12B90B0220026E16D /* PlayerAssets.xcassets in Resources */,
 				2E3D16B32B3D8DF3006C7ACF /* LaunchScreen.storyboard in Resources */,
+				2E8077C92BFD0D5300D2937F /* PlaylistAssets.xcassets in Resources */,
 				2E8077B52BF61B1700D2937F /* MyTrackAssets.xcassets in Resources */,
 				2E3D16B02B3D8DF3006C7ACF /* Assets.xcassets in Resources */,
 				2E3D16BE2B3D909C006C7ACF /* Instructions.xcassets in Resources */,

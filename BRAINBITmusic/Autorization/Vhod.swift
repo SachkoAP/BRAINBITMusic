@@ -6,8 +6,7 @@
 //
 
 import UIKit
-//import neurosdk2
-
+import 
 
 class Vhod: UIViewController {
     private let trackImage: UIImageView = {

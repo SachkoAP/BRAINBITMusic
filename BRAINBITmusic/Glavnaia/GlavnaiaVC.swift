@@ -295,8 +295,9 @@ extension GlavnaiaVC: UICollectionViewDelegate {
 //            present(vc, animated: true, completion: nil)
             
             let vc = PlaylistVC(playlistInfo: cellsCollection[indexPath.row])
-            vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true, completion: nil)
+//            vc.modalPresentationStyle = .fullScreen
+//            present(vc, animated: true, completion: nil)
+            navigationController?.pushViewController(vc, animated: false)
 
         }
     }

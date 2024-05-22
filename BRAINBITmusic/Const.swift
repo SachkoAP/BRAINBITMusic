@@ -59,4 +59,7 @@ enum Image {
     enum Search {
         static var searchTabBarImage = UIImage(named: "searchTabBarImage")
     }
+    
+    enum Playlist {
+    }
 }

@@ -27,6 +27,7 @@ class PlaylistVC: UIViewController {
         return collectionView
     }()
     
+    
     init(playlistInfo: CollectionCollection) {
             self.playlistInfo = playlistInfo
             self.imagePlaylist.image = playlistInfo.image
@@ -36,10 +37,14 @@ class PlaylistVC: UIViewController {
        required init?(coder: NSCoder) {
            fatalError("init(coder:) has not been implemented")
        }
-
+    
+//    override func viewWillAppear(_ animated: Bool) {
+//        self.navigationController?.setNavigationBarHidden(true, animated: false)
+//    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         //service
         collectionViewTracks.register(TrackCollcectionViewCell.self, forCellWithReuseIdentifier: TrackCollcectionViewCell.reuseId)
@@ -58,6 +63,15 @@ class PlaylistVC: UIViewController {
         setupConstraint()
     }
     
+    private func addActions() {
+//        buttonBack.addAction(UIAction(handler: { [weak self] _ in
+//            let vc = GlavnaiaVC()
+//            self?.navigationController?.pushViewController(vc, animated: false)
+////            self?.navigationController?.popViewController(animated: false)
+//        }), for: .touchUpInside)
+    }
+
+    
     private func setupConstraint() {
         NSLayoutConstraint.activate([
             imagePlaylist.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -69,7 +83,7 @@ class PlaylistVC: UIViewController {
             collectionViewTracks.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 30),
             collectionViewTracks.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -30),
             collectionViewTracks.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
-            
+                        
         ])
     }
 
